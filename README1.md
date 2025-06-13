@@ -1,8 +1,8 @@
-=======================================================================
-                     Grafana Monitoring Setup Summary
-=======================================================================
 
-✅ Server Roles
+                    ** Grafana Monitoring Setup Summary**
+
+
+**✅ Server Roles**
 
 ---------------------------------------------------------------
 | Component          | Server Type                           |
@@ -16,9 +16,9 @@
 | Blackbox Exporter  | Agent (Target Servers)                |
 ---------------------------------------------------------------
 
-=======================================================================
-✅ Application & Infrastructure Monitoring
-=======================================================================
+ 
+**✅ Application & Infrastructure Monitoring**
+ 
 
 ---------------------------------------------------------------------------
 | Component          | Description               | Port  | Configuration   |
@@ -28,9 +28,9 @@
 | Blackbox Exporter  | Port, HTTP, TCP Monitoring| 9115  | YAML in Prometheus |
 ---------------------------------------------------------------------------
 
-=======================================================================
-✅ Port & Protocol Monitoring
-=======================================================================
+
+**✅ Port & Protocol Monitoring**
+
 
 ---------------------------------------------------------------------------
 | Component          | Description                                      |
@@ -41,9 +41,9 @@
 ✔️ Blackbox Exporter: Must be installed on production/target servers.
 ✔️ Prometheus: Add IP and Port in YAML for port monitoring.
 
-=======================================================================
-✅ Logs Monitoring (Live Transactions)
-=======================================================================
+
+**✅ Logs Monitoring (Live Transactions)**
+
 
 ---------------------------------------------------------------
 | Component  | Role                 | Flow                    |
@@ -58,9 +58,9 @@
 ✔️ Dashboard: Custom dashboards required for live log monitoring.  
 ✔️ Datasource: Loki  
 
-=======================================================================
-✅ Full Monitoring Stack Overview
-=======================================================================
+ 
+**✅ Full Monitoring Stack Overview**
+ 
 
 ---------------------------------------------------------------------------
 | Feature                | Source Component   | Collection Type | Visualized In |
@@ -71,9 +71,9 @@
 | Application Logs       | Promtail           | Push            | Grafana       |
 ---------------------------------------------------------------------------
 
-=======================================================================
-✅ Push vs Pull Summary
-=======================================================================
+ 
+**✅ Push vs Pull Summary**
+ 
 
 ---------------------------------------------------------------
 | Method | Components                | Notes                  |
@@ -84,9 +84,9 @@
 |        | Blackbox Exporter         | Prometheus pulls port/HTTP/TCP metrics |
 ---------------------------------------------------------------
 
-=======================================================================
-✅ Key Notes
-=======================================================================
+ 
+**✅ Key Notes**
+ 
 
 ✔️ Prometheus: Pulls all infra and port metrics (Configured in prometheus.yml)  
 ✔️ Promtail: Pushes application logs to Loki  
@@ -94,11 +94,11 @@
 ✔️ Grafana: Dashboards for logs, infra metrics, and port status  
 ✔️ Grafana Templates: Available in Grafana Labs for quick setup
 
-=======================================================================
-✅ Quick Configuration Paths
-=======================================================================
+ 
+**✅ Quick Configuration Paths**
+ 
 
 ✔️ Prometheus YAML Path: `/etc/prometheus/prometheus.yml`  
 ✔️ Grafana Dashboards: Use templates from Grafana Labs + Create custom dashboards for logs
 
-=======================================================================
+
